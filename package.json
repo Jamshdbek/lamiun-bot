@@ -1,0 +1,23 @@
+{
+  "name": "lamiun-bot",
+  "version": "1.0.0",
+  "description": "learing Arabic",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "nodemon index.js",
+    "prod": "node index.js",
+    "build": "webpack --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jamshid",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "node-telegram-bot-api": "^0.66.0",
+    "telegraf": "^4.16.3"
+  }
+}
