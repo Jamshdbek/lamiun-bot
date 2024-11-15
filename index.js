@@ -1,9 +1,9 @@
 const TelegramBot = require("node-telegram-bot-api");
 const { Telegram } = require("telegraf");
-require("dotenv").config();
-const token = process.env.SECRET_TOKEN;
-const bot = new TelegramBot(token, { polling: true });
-const bott = new Telegram(token, { polling: true });
+// require("dotenv").config();
+// const token = process.env.SECRET_TOKEN;
+const bot = new TelegramBot('7769107162:AAGkIsfUyEtdW5Qzp9dx9dxrCIKMa83t-RQ');
+const bott = new Telegram('7769107162:AAGkIsfUyEtdW5Qzp9dx9dxrCIKMa83t-RQ');
 
 // function RequestSignIn(param) {
 //   let urlPush = `https://lamiun-web-cys3.vercel.app`;
