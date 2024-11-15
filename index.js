@@ -5,32 +5,31 @@ const token = process.env.SECRET_TOKEN;
 const bot = new TelegramBot(token, { polling: true });
 const bott = new Telegram(token, { polling: true });
 
-function requestSignIn(param) {
-  console.log(param, "param");
-  let urlPush = `https://lamiun-web-cys3.vercel.app`;
-  try {
-    const res = fetch("http://localhost:8080/auth/login", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        email: "jamshidddd@gmail.com",
-        password: "234",
-      }),
-    });
+// function RequestSignIn(param) {
+//   let urlPush = `https://lamiun-web-cys3.vercel.app`;
+//   try {
+//     const res = fetch("http://localhost:8080/auth/login", {
+//       method: "POST",
+//       headers: {
+//         "Content-Type": "application/json",
+//       },
+//       body: JSON.stringify({
+//         email: "jamshidddd@gmail.com",
+//         password: "234",
+//       }),
+//     });
 
-    if (res.ok) {
-      urlPush = "https://lamiun-web-cys3.vercel.app/dashboard";
-    } else {
-      urlPush = `https://lamiun-web-cys3.vercel.app?search=${param.username}`;
-    }
-  } catch (error) {
-    console.error("Error:", error);
-  }
+//     if (res.ok) {
+//       urlPush = "https://lamiun-web-cys3.vercel.app/dashboard";
+//     } else {
+//       urlPush = `https://lamiun-web-cys3.vercel.app?search=${param.username}`;
+//     }
+//   } catch (error) {
+//     console.error("Error:", error);
+//   }
 
-  return urlPush;
-}
+//   return urlPush;
+// }
 
 
 bott.setChatMenuButton({
